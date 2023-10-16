@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './component/navbar/Navbar'
 import Hero from './component/hero/Hero'
+import About from './component/about/About'
 
 
 class App extends React.Component{
@@ -8,7 +9,9 @@ class App extends React.Component{
 		return(
 			<>
 				<Navbar/>
-				<Hero />
+				<Hero/>
+
+				<About />
 			</>
 		)
 	}
