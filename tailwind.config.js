@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      'hero-background': "url(images/desktop/image-hero.jpg)"
+      fontFamily: {
+        'alata': ['alata', 'sans-serif'],
+        'josefin-sans': ['josefin sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
