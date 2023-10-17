@@ -5,7 +5,7 @@ import CreationsCard from './CreationsCard'
 
 export default function Creations(){
 
-	const images = ["deep-earth", "night-arcade", , "soccer-team", "grid", "from-above","pocket-borealis","curiosity",  "fisheye"]
+	const images = ["deep-earth", "night-arcade","soccer-team", "grid", "from-above","pocket-borealis","curiosity",  "fisheye"]
 	function getText(str){
 		if(str.split("-").length == 1){
 			return `the ${str}`

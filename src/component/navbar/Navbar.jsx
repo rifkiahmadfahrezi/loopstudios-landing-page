@@ -30,8 +30,8 @@ export default class Navbar extends React.Component{
 		// detect if web is scrolled
 		this.isOnScrollHandler()
 		return (
-			<nav className={`z-[9] w-screen py-6 px-3 fixed transition duration-500 ${this.state.isOnScroll ? `bg-black` : null}`}>
-				<div className="container mx-auto flex items-center justify-between px-4">
+			<nav className={`z-[9] w-full py-6 fixed transition duration-500 ${this.state.isOnScroll ? `bg-black` : null}`}>
+				<div className="flex container mx-5 sm:mx-auto items-center justify-between px-4">
 					<NavbarLogo/>
 					<NavbarMenu/>
 				</div>
