@@ -16,7 +16,7 @@ export default class Navbar extends React.Component{
 
 	isOnScrollHandler(){
 		window.addEventListener("scroll", ()=> {
-			if(window.scrollY > 0){
+			if(window.scrollY > (window.innerHeight - 100)){
 				this.setState({isOnScroll: true})
 			}else if(window.scrollY == 0){
 				this.setState({isOnScroll: false})
@@ -30,7 +30,7 @@ export default class Navbar extends React.Component{
 		// detect if web is scrolled
 		this.isOnScrollHandler()
 		return (
-			<nav className={`w-screen py-6 px-3 fixed transition duration-500 ${this.state.isOnScroll ? `bg-black` : null}`}>
+			<nav className={`z-[9] w-screen py-6 px-3 fixed transition duration-500 ${this.state.isOnScroll ? `bg-black` : null}`}>
 				<div className="container mx-auto flex items-center justify-between px-4">
 					<NavbarLogo/>
 					<NavbarMenu/>
