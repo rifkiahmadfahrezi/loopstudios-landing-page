@@ -8,9 +8,9 @@ export default function Footer(){
 
 	return (
 		<footer className="bg-black w-full mt-[100px] bottom-0 mb-0 min-h-[250px] py-5">
-			<div className="container flex flex-col lg:flex-row mx-5 items-center lg:justify-between sm:mx-auto">
+			<div className="container w-[90%] md:w-[95%] flex flex-col lg:flex-row mx-5 items-center lg:justify-between sm:mx-auto">
 				<div className="flex flex-col my-5">
-					<NavbarLogo />
+					<img src="./images/logo.svg" className="max-w-[150px]" alt="footer logo"/>
 					<div className="flex flex-col lg:flex-row md:flex-row items-center mt-6 ml-[-10px]">
 						<FooterLink link="#about" text="about"/>
 						<FooterLink link="#" text="Careers"/>

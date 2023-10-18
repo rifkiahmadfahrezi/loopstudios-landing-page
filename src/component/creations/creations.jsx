@@ -23,10 +23,9 @@ export default function Creations(){
 		})
 	}
 
-	console.log(screenWidth)
 
 	return (
-		<section id="creations" className="container mx-5 sm:mx-auto">
+		<section id="creations" className="container mx-5 md:mx-auto w-[90%] sm:w-[95%]">
 			<div className="flex items-center justify-between my-6">
 				<CreationsTitle />
 				<CreationsButton text="see all" href="#" />

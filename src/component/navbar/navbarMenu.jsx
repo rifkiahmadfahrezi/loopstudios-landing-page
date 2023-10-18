@@ -30,9 +30,9 @@ export default class NavbarMenu extends React.Component{
 		return(
 			<>
 				{this.state.isOpen == false ? 
-					<img className="z-[99] md:hidden cursor-pointer" id="menu-toggler" onClick={this.setIconToggler}  src="./images/icon-hamburger.svg" alt="navbar menu toggler"/>
+					<img className="z-[99] md:hidden cursor-pointer mr-6" id="menu-toggler" onClick={this.setIconToggler}  src="./images/icon-hamburger.svg" alt="navbar menu toggler"/>
 					: 
-					<img className="z-[99] md:hidden cursor-pointer" id="menu-toggler" onClick={this.setIconToggler}  src="./images/icon-close.svg" alt="navbar menu toggler"/>
+					<img className="z-[99] md:hidden cursor-pointer mr-6" id="menu-toggler" onClick={this.setIconToggler}  src="./images/icon-close.svg" alt="navbar menu toggler"/>
 				}
 				<div id="menu-wrapper" className={`absolute flex flex-col h-screen transition duration-500 ease-in-out inset-0 bg-black ${this.state.isOpen ? `translate-y-[0]` : `translate-y-[-100%]`}  md:static md:translate-y-[0] z-10 md:top-0 md:h-fit align-center md:flex-row  justify-center md:bg-transparent`} >
 					<NavbarMenuItem link="#" text="About"/>

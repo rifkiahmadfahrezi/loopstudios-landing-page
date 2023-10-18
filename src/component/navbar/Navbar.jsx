@@ -31,7 +31,7 @@ export default class Navbar extends React.Component{
 		this.isOnScrollHandler()
 		return (
 			<nav className={`z-[9] w-full py-6 fixed transition duration-500 ${this.state.isOnScroll ? `bg-black` : null}`}>
-				<div className="flex container mx-5 sm:mx-auto items-center justify-between px-4">
+				<div className="flex container mx-5 md:mx-auto items-center justify-between px-4">
 					<NavbarLogo/>
 					<NavbarMenu/>
 				</div>
